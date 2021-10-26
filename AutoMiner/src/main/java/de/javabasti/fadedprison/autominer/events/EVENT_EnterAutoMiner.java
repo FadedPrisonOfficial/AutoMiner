@@ -44,7 +44,6 @@ public class EVENT_EnterAutoMiner implements Listener {
 			SetupEnchantsettings setupEnchantsettings = AutoMiner.getInstance().setupEnchantsettings;
 			YamlConfiguration cfgConfig = YamlConfiguration.loadConfiguration(setupConfig.getFile());
 			YamlConfiguration cfgSettings = YamlConfiguration.loadConfiguration(setupEnchantsettings.getFile());
-
 			File file = new File(AutoMiner.instance.getDataFolder() + "/playerdata",
 					String.valueOf(p.getUniqueId().toString()) + ".yml");
 			YamlConfiguration cfg = YamlConfiguration.loadConfiguration(file);
