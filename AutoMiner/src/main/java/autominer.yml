@@ -1,0 +1,106 @@
+## Plugin made by JavaBasti for FadedPrison ##
+
+## Use %prefix% for the Prefix given below. ##
+## Use %target_name% for the person you give autominer-time. ##
+## Use %autominer_time% to say how many Seconds, Minutes, Hours or Days of autominer-time the person gets. ##
+## Use %autominer_time_left% to say how much time you have left in your autominer. ##
+## Use %timeused% to say how long the person was in the autominer on leave. ##
+## Use %playerautominertimeleft% to say how long the player has left in their autominer on leave. ##
+
+## All of the placeholders above work in the messages where they are in right now (means %autominer_time_left% doesn't work in 'TimeGivenSeconds')  ##
+
+AutoMiner:
+  Prefix: "&6AutoMiner &7︳ "
+
+
+  ### Permissions to allow a person to use the command to give autominer-time ###
+  PermissionsToGiveTime: "autominer.give"
+
+
+  ### Summary of how many Tokens you made after leaving the AutoMiner ###
+
+  SummarizeTokens: "
+
+&f&l&m=======[&3&l AutoMiner Summary &f&l&m]=========&f
+\n
+&bYou made a total of &3%tokensmade% &bTokens
+\n
+&bYou used the AutoMiner for:
+\n
+&3%timeused%
+\n
+&bTotal time left:&f
+\n
+&3%playerautominertimeleft%
+\n
+&f&l&m====================================="
+
+
+  ### Message when you want to check how much autominer-time you have left ###
+  AutoMinerTimeLeft: "%prefix% &bYou have &3%autominer_time_left% &bleft in your autominer."
+
+  ### Message when you try to enter the AutoMiner without any time left ###
+  NoAutoMinerTimeLeftOnEnter: "%prefix% &bYou don't have any time left to join the AutoMiner.'"
+
+ ### Message when you stand inside the autominer and don't have any time left. ###'
+  AutoMinerOutOfTime: "%prefix% &bYou don't have any autominer time left. You left the AutoMiner"
+
+### Message when reloading files ###
+  ReloadedAllFiles: "%prefix% &b All Configs successfully reloaded."
+
+ ### Entering and Leaving AutoMiner - Messages
+  EnteredAutoMiner: "%prefix% &bYou entered the AutoMiner."
+  LeftAutoMiner: "%prefix% &bYou left the AutoMiner."
+
+  ### Actionbar message while standing inside the AutoMiner and receiving tokens ###
+  ActionBar_ReceivedTokens: "&bYou received &3%tokenamount% Tokens &bfrom the AutoMiner."
+
+  ###  Message for the Person who used the command to give the autominer-time to a specific person. ###
+  TimeGivenSeconds: "%prefix% &bSuccessfully added &3%target_name% &3%autominer_time% seconds &bto their autominer-time."
+  TimeGivenMinutes: "%prefix% &bSuccessfully added &3%target_name% &3%autominer_time% minutes &bto their autominer-time."
+  TimeGivenHours: "%prefix% &bSuccessfully added &3%target_name% &3%autominer_time% hours &bto their autominer-time."
+  TimeGivenDays: "%prefix% &bSuccessfully added &3%target_name% &3%autominer_time% days &bto their autominer-time."
+
+
+  ###  Message for the Person who received the autominer-time. ###
+  TimeReceivedSeconds: "%prefix% &bYou received &3%autominer_time% seconds &bof autominer-time."
+  TimeReceivedMinutes: "%prefix% &bYou received &3%autominer_time% minutes &bof autominer-time."
+  TimeReceivedHours: "%prefix% &bYou received &3%autominer_time% hours &bof autominer-time."
+  TimeReceivedDays: "%prefix% &bYou received &3%autominer_time% days &bof autominer-time."
+
+
+  ###  Message for the Person who used the command to remove the autominer-time to a specific person. ###
+  TimeRemovedSeconds: "%prefix% &bSuccessfully removed &3%target_name% &3%autominer_time% seconds &bfrom their autominer-time."
+  TimeRemovedMinutes: "%prefix% &bSuccessfully removed &3%target_name% &3%autominer_time% minutes &bfrom their autominer-time."
+  TimeRemovedHours: "%prefix% &bSuccessfully removed &3%target_name% &3%autominer_time% hours &bfrom their autominer-time."
+  TimeRemovedDays: "%prefix% &bSuccessfully removed &3%target_name% &3%autominer_time% days &bfrom their autominer-time."
+
+
+  ###  Message for the Person who lost the autominer-time. ###
+  TimeGotRemovedSeconds: "%prefix% &3%autominer_time% seconds &bhas been removed from your autominer-time."
+  TimeGotRemovedMinutes: "%prefix% &3%autominer_time% minutes &bhas been removed from your autominer-time."
+  TimeGotRemovedHours: "%prefix% &3%autominer_time% hours &bhas been removed from your autominer-time."
+  TimeGotRemovedDays: "%prefix% &3%autominer_time% days &bhas been removed from your autominer-time."
+
+  ###  Message for the Person who used the command to remove the autominer-time to a specific person. ###
+  TimeSetSeconds: "%prefix% &bSuccessfully set the autominer-time of &3%target_name% &bto &3%autominer_time% seconds"
+  TimeSetMinutes: "%prefix% &bSuccessfully set the autominer-time of &3%target_name% &bto &3%autominer_time% minutes"
+  TimeSetHours: "%prefix% &bSuccessfully set the autominer-time of &3%target_name% &bto &3%autominer_time% hours"
+  TimeSetDays: "%prefix% &bSuccessfully set the autominer-time of &3%target_name% &bto &3%autominer_time% days"
+
+
+  ###  Message for the Person who lost the autominer-time. ###
+  TimeSetToSeconds: "%prefix% &bYour autominer-time has been set to &3%autominer_time% seconds"
+  TimeSetToMinutes: "%prefix% &bYour autominer-time has been set to &3%autominer_time%  minutes"
+  TimeSetToHours: "%prefix% &bYour autominer-time has been set to &3%autominer_time%  hours"
+  TimeSetToDays: "%prefix% &bYour autominer-time has been set to &3%autominer_time%  days"
+
+
+  ### Error & no permission messages ###
+  WrongVariableUsed: "%prefix% &bYou have to use one of the following time variables: &3'Sec' 'Min' 'Hr' 'Day'"
+  WrongNumberUsed: "%prefix% &cPls use a number above 0"
+  NoPickaxeInHand: "%prefix% &cYou need to hold a pickaxe. Please leave and rejoin the AutoMiner with a Pickaxe in your hand."
+
+  PlayerNotAvailable: "%prefix% &cThe person never played on the Server before."
+
+  NoPermissions: "%prefix% &cYou don't have the permissions to perform that command."

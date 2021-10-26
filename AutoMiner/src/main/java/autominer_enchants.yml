@@ -1,0 +1,21 @@
+## Plugin made by JavaBasti for FadedPrison ##
+
+
+
+## The Number next to TokenMiner is the "main" value of tokens you get per proc with lvl 1 ##
+
+## The Number next to TokenImpact is the "main" boost you have per TokenImpact level ##
+
+## The Number next to Seconds in JoinCooldown is the time in seconds how much time the cooldown is to re-enter the autominer after leaving ##
+
+## The Number next to Seconds is the time in seconds how much time is between each autominer proc ##
+
+
+AutoMiner:
+  JoinCooldown:
+    Seconds: 5
+  TimeBetweenProcs:
+    Seconds: 5
+  Enchants:
+    TokenMiner: 20000
+    TokenImpact: 0.01

@@ -1,0 +1,11 @@
+name: AutoMiner
+version: '25.10.2021'
+main: de.javabasti.fadedprison.autominer.AutoMiner
+authors: [ JavaBasti ]
+description: An Autominer Plugin, which automines tokens for you
+api: TokenEnchantAPI
+
+commands:
+  autominer:
+    aliases: [am, autominers, automine]
+    description: Give a specific person a certain amount of autominer time
